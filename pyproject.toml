@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "maths-problems"
+version = "0.1.0"
+description = "maths problems"
+authors = ["Shailendra Jain <shailendrajain28@gmail.com>"]
+readme = "README.md"
+packages = [{include = "maths_problems"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
