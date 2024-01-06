@@ -1,5 +1,9 @@
 # without using len function 
 # time complexity O(logn) or theta(number of digits in n )
+import math
+import sys
+
+
 def count_digits(n):
     count = 0
     while n > 0:
@@ -11,13 +15,15 @@ def count_digits(n):
 def count_digits2(n):
     return len(str(n))
 
+def count_digits3(n):
+    if n>1:
+        cd = math.log10(n)
+        print(cd)
+        return math.floor(cd)+1
+    else:
+        return 1
+
 
 
 if __name__ == '__main__':
-    print(count_digits(123))
-    print(count_digits(12345))
-    print(count_digits(100))
-    print("*"*50)
-    print(count_digits2(123))
-    print(count_digits2(12345))
-    print(count_digits2(100))
+    print(count_digits3(int(sys.argv[1])))

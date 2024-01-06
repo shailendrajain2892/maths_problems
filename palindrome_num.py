@@ -1,6 +1,7 @@
 import sys
 
 
+# time complexity theta(digits of number)
 def isPalindrome(s):
     return s == s[::-1]
 
@@ -19,15 +20,15 @@ def isPalindrome2(pn):
         return False
     
 def isPalindrome3(pnumber):
-    opnumber = pnumber
+    temp = pnumber
     if pnumber < 10:
         return True
     reverse = 0
-    while pnumber > 0:
-        remainder = pnumber%10
+    while temp > 0:
+        remainder = temp%10
         reverse = (reverse*10)+remainder
-        pnumber = pnumber//10
-    if reverse == opnumber:
+        temp = temp//10
+    if reverse == pnumber:
         return True
     else:
         return False
