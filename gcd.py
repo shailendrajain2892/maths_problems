@@ -52,5 +52,5 @@ if __name__ == "__main__":
     m = args.get('num1')
     n = args.get('num2')
     # print(gcd(m, n))
-    print(euclidean_algo(m,n))
+    # print(euclidean_algo(m,n))
     print(euclidean_algo_opt(m,n))
