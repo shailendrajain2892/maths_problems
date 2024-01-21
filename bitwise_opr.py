@@ -20,8 +20,8 @@ def bitwise_not(x):
     return ~x
 
 if __name__ == "__main__":
-    x = int(sys.argv[1])
-    y = int(sys.argv[2])
+    x = int(sys.argv[1]) or 10
+    y = int(sys.argv[2]) or 2
     print(and_bitwise_opr(x, y)) 
     # 3 -- 0 1 1
     # 6 -- 1 1 0
